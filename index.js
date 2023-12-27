@@ -92,7 +92,7 @@ router.post('/email_attachment', upload.single('file'), async function(req, res)
             //     }
             // ],
             html: `<p>Tere!</p>
-                    <p>Manusest leiad Kodukujundajas tehtud viimistluse valikud. Jätkamiseks vajuta siia: <a rel="noreferrer" target="_blank" href=${req.body.homeDesignerUrl}>${req.body.apartment}</a></p>
+                    <p>Jätka Kodukujundajas viimistlusvalikute tegemist siin: <a rel="noreferrer" target="_blank" href=${req.body.homeDesignerUrl}>${req.body.apartment}</a></p>
                     <p>Valikute mugavaks haldamiseks ja Livenile edastamiseks loo konto.</p>
                     <p>Edu kodu loomisel!</p>
                     <p>Liven</p>
@@ -111,8 +111,7 @@ router.post('/email_attachment', upload.single('file'), async function(req, res)
             //     }
             // ],
             html: `<p>Hello!</p>
-                    <p>In the attachment you can find the interior design choices you have made in the Home Designer.</p>
-                    <p>Click here to continue: <a rel="noreferrer" target="_blank" href=${req.body.homeDesignerUrl}>${req.body.apartment}</a></p>
+                    <p>Continue your interior design selections in Home Designer here: <a rel="noreferrer" target="_blank" href=${req.body.homeDesignerUrl}>${req.body.apartment}</a></p>
                     <p>Create an account to conveniently manage your selections and submit them to Liven.</p>
                     <p>Happy home designing!</p>
                     <p>Liven</p>
